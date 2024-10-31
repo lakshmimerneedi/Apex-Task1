@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Space Exploration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="background">
+    <header>
+        <h1>Space Exploration</h1>
+        <nav>
+    
+    <ul>
+        <li><a href="#missions" class="button">Notable Missions</a></li>
+        <li><a href="#upcoming" class="button">Upcoming Missions</a></li>
+        <li><a href="#phenomena" class="button">Space Phenomena</a></li>
+    </ul>
+</nav>
+
+    </header>
+
+    <section id="missions">
+        <h2>Notable Missions</h2>
+        <div class="mission-container">
+            <div class="mission">
+                <img src="assets/1.jpg" alt="Mars Rover">
+                <h3>Mars Rover Curiosity</h3>
+                <p>Launched in 2011, Curiosity has been exploring the Martian surface to assess past and present habitability.</p>
+                <button class="mission-button">Learn More</button>
+            </div>
+            <div class="mission">
+                <img src="assets/2.jpg" alt="Hubble Space Telescope">
+                <h3>Hubble Space Telescope</h3>
+                <p>Since 1990, Hubble has provided stunning images and valuable data, transforming our understanding of the universe.</p>
+                <button class="mission-button">Learn More</button>
+            </div>
+            <div class="mission">
+                <img src="assets/3.jpg" alt="Voyager Probes">
+                <h3>Voyager Probes</h3>
+                <p>Launched in 1977, Voyager 1 and 2 have traveled beyond the solar system, sending back invaluable information.</p>
+                <button class="mission-button">Learn More</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="upcoming">
+        <h2>Upcoming Missions</h2>
+        <div class="mission-container">
+            <div class="mission">
+                <img src="assets/4.jpg" alt="Artemis Mission">
+                <h3>Artemis I</h3>
+                <p>Aiming to return humans to the Moon, this mission will pave the way for future crewed missions to Mars.</p>
+                <button class="mission-button">Learn More</button>
+            </div>
+            <div class="mission">
+                <img src="assets/5.jpg" alt="James Webb Space Telescope">
+                <h3>James Webb Space Telescope</h3>
+                <p>Set to launch soon, JWST will offer unprecedented insights into the formation of stars and galaxies.</p>
+                <button class="mission-button">Learn More</button>
+            </div>
+            <div class="mission">
+                <img src="assets/6.jpg" alt="Lunar Lander">
+                <h3>Human Landing System</h3>
+                <p>This project focuses on developing a lunar lander to support the Artemis program's goals.</p>
+                <button class="mission-button">Learn More</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="phenomena">
+        <h2>Space Phenomena</h2>
+        <ul>
+            <li>Black Holes</li>
+            <li>Supernovae</li>
+            <li>Neutron Stars</li>
+            <li>Quasars</li>
+            <li>Pulsars</li>
+            <li>Dark Matter</li>
+        </ul>
+    </section>
+
+    <button class="button" onclick="showAlert()">Click me for a Fun Fact</button>
+    <script>
+        function showAlert() {
+            alert('Did you know? A day on Venus is longer than a year on Venus!'); // Alert message
+        }
+    </script>
+
+    <footer>
+        <p>&copy; 2024 Space Exploration</p>
+    </footer>
+</body>
+</html>
