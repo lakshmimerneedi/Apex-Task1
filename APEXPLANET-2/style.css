@@ -1,0 +1,273 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-image: url('assets/back.jfif'); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    color: #fff; /* Text color should be white to contrast with black backgrounds */
+    overflow-x: hidden;
+}
+
+#home, #gallery, #services, #contact {
+    background-color: black; /* Set section background color to black */
+    padding: 120px 20px;
+}
+
+
+header {
+    background-color: #222;
+    padding: 15px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    max-height: 100px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: #444;
+}
+
+nav a.active {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 120px 20px;
+}
+
+/* Bold and Attractive Heading Styles */
+.cosmic-heading,
+.starlight-heading,
+.mission-heading,
+.contact-heading,
+.upload-heading {
+    font-size: 2em; /* Slightly larger for an attractive effect */
+    color: #1a73e8; /* Bright, attractive color */
+    font-weight: 700; /* Bolder for emphasis */
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for extra pop */
+    text-align: center; /* Centers the headings */
+}
+
+/* Centering Section Content */
+.grid-item {
+    background-color: black; /* Set the grid-item sections' background color to black */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3); /* Optional: add shadow for effect */
+    margin-bottom: 35px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertically centers content */
+    align-items: center; /* Horizontally centers content */
+}
+
+/* Gallery Grid */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* Service Cards */
+.service-cards {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+.service-card {
+    background-color: #251f1f;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 300px;
+}
+
+.service-card img {
+    margin-bottom: 15px;
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.service-card h3 {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    font-size: 1em;
+    margin-top: 10px;
+}
+
+.service-card:hover {
+    transform: scale(1.05);
+}
+
+/* Form Styles */
+#contactForm input, #imageForm input {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+#contactForm button, #imageForm button {
+    background-color: #5cb85c;
+    color: #4e3f3f;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+}
+
+#contactForm button:hover, #imageForm button:hover {
+    background-color: #4cae4c;
+}
+
+#imagePreview button {
+    background-color: #d9534f;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#imagePreview button:hover {
+    background-color: #c9302c;
+}
+/* Add styles for the To-Do List section */
+#todo {
+    background-color: black; /* Set background color to black */
+    padding: 30px 20px;
+    margin-bottom: 35px;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3); /* Same shadow effect as other sections */
+    text-align: center;
+}
+
+.todo-heading {
+    color: #fff;
+    font-size: 2.2em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.todo-container {
+    margin-bottom: 20px;
+}
+
+#todoInput {
+    width: 70%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    margin-right: 10px;
+    font-size: 1.1em;
+}
+
+#addTodoBtn {
+    background-color: #5cb85c;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1em;
+}
+
+#addTodoBtn:hover {
+    background-color: #4cae4c;
+}
+
+ul#todoList {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+ul#todoList li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    color: #333;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+ul#todoList li:hover {
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
+
+.remove-btn {
+    background-color: #d9534f;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.remove-btn:hover {
+    background-color: #c9302c;
+}

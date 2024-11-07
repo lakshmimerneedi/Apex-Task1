@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Exploration Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section id="home" class="grid-item">
+            <h2 class="cosmic-heading">Explore the Universe</h2>
+            <p>Discover the cosmic wonders that span across galaxies. Journey through space and time.</p>
+        </section>
+
+        <section id="gallery" class="grid-item">
+            <h2 class="starlight-heading">Stellar Creations</h2>
+            <div class="gallery-grid">
+                <img src="assets/1.webp" alt="Space Art 1">
+                <img src="assets/2.jfif" alt="Space Art 2">
+                <img src="assets/3.jfif" alt="Space Art 3">
+                <img src="assets/4.jfif" alt="Space Art 4">
+                <img src="assets/5.jfif" alt="Space Art 5">
+                <img src="assets/6.jfif" alt="Space Art 6">
+                <img src="assets/7.jfif" alt="Space Art 7">
+                <img src="assets/8.jfif" alt="Space Art 8">
+                <img src="assets/9.jfif" alt="Space Art 9">
+            </div>
+        </section>
+
+        <section id="services" class="grid-item">
+            <h2 class="mission-heading">Command Center</h2>
+            <div class="service-cards">
+                <div class="service-card">
+                    <h3>Consultations</h3>
+                    <img src="assets/a.jfif" alt="Space Consultations">
+                    <p>Expert guidance for your cosmic journey.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Space Tours</h3>
+                    <img src="assets/b.jfif" alt="Space Exploration Tours">
+                    <p>Join us for a thrilling tour through the stars.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Space Store</h3>
+                    <img src="assets/c.jfif" alt="Space Merchandise">
+                    <p>Shop exclusive space-themed merchandise.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Workshops</h3>
+                    <img src="assets/d.jfif" alt="Space Learning Workshops">
+                    <p>Enhance your knowledge through engaging workshops.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Tech Support</h3>
+                    <img src="assets/f.jfif" alt="Space Technology">
+                    <p>Receive professional tech advice for space innovations.</p>
+                </div>
+            </div>
+        </section>
+        <section id="todo" class="grid-item">
+            <h2 class="todo-heading">Your To-Do List</h2>
+            <div class="todo-container">
+                <input type="text" id="todoInput" placeholder="Add a new task..." />
+                <button id="addTodoBtn">Add Task</button>
+            </div>
+            <ul id="todoList"></ul>
+        </section>        
+        
+        <section id="contact" class="grid-item">
+            <h2 class="contact-heading">Get In Touch</h2>
+            <form id="contactForm">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <input type="password" id="password" placeholder="Create Password" required>
+                <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <section id="imageSection" class="grid-item" style="display:none;">
+            <h2 class="upload-heading">Share Your Creation</h2>
+            <form id="imageForm">
+                <input type="url" id="imageUrl" placeholder="Paste Image URL" required>
+                <button type="submit">Submit</button>
+            </form>
+            <div id="imagePreview" style="margin-top: 20px;"></div>
+        </section>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
